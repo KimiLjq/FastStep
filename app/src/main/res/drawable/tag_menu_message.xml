@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:drawable/sym_action_chat" android:state_checked="true" />
+    <item android:drawable="@android:drawable/sym_action_chat" />
+
+</selector>

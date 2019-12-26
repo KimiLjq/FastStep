@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IndexFragment"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/index_banner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="今日好货"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="20sp" />
+
+        <GridView
+            android:id="@+id/index_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_content"
+            android:numColumns="2">
+
+        </GridView>
+
+        <!--<LinearLayout
+            android:id="@+id/index_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+        </LinearLayout>-->
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

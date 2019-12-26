@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="FastStep"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/iv_index_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/actionModeWebSearchDrawable"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#000000"/>
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_channel"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tag_menu_channel"
+            android:text="推送"/>
+        <RadioButton
+            android:id="@+id/rb_message"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tag_menu_message"
+            android:text="收藏"/>
+        <RadioButton
+            android:id="@+id/rb_cicle"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tag_menu_circle"
+            android:text="个人"/>
+        <!--<RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tag_menu_setting"
+            android:text="设置"/>-->
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="#000000"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_tab_bar"
+        android:layout_below="@id/ly_top_bar">
+
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>
