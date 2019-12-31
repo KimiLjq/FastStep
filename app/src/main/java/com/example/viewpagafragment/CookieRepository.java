@@ -17,7 +17,6 @@ import okhttp3.HttpUrl;
 
 public class CookieRepository {
     Context context;
-    private String configUrl="cookie.properties";
     Properties p=new Properties();
     private static List<Cookie> list;
 //    public CookieRepository(){};
